@@ -1,3 +1,8 @@
 # this is the code for downloading all the wazuh dependencies in rockylinux in vmware centOS version 8
 
+
+first disable firewall before curling the wazuh instllation
+
+sudo systemctl stop firewalld
+
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
