@@ -6,3 +6,7 @@ first disable firewall before curling the wazuh instllation
 sudo systemctl stop firewalld
 
 curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+
+to uninstall
+
+sudo bash wazuh-install.sh --uninstall
