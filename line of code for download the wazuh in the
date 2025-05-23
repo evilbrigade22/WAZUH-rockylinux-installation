@@ -31,3 +31,11 @@ for the putting the directorie any directories you can put on conf is here a sam
 
 <directories realtime="yes" report_changes="yes" chech_all="yes">C:\Users\rivan\OneDrive\Desktop</directories> 
 
+
+
+
+FOR SHOWING THE PASSWORD OR FORGETTEN IT TYPE THIS:
+
+sudo yum install tar -y   (INSTALL 1ST THE COMMAND)
+sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt  (THIS WILL GENERATE THE PASSWORD)
+ 
