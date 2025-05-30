@@ -29,7 +29,7 @@ sudo apt-get remove --purge wazuh-agent
 
 for the putting the directorie any directories you can put on conf is here a sample:
 
-<directories realtime="yes" report_changes="yes" chech_all="yes">C:\Users\rivan\OneDrive\Desktop</directories> 
+<directories realtime="yes" report_changes="yes" check_all="yes">C:\Users\rivan\OneDrive\Desktop</directories> 
 
 
 
