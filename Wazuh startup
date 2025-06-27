@@ -1,0 +1,25 @@
+STOP FIRST THE FIREWALL
+
+sudo systemctl stop firewalld
+
+then wait for 10 - 15 seconds for the wazuh dashboard server to load
+
+show ip address: ip ad
+
+You can access the web interface https://<wazuh-dashboard-ip>:443
+    User: admin
+    New Password: C1sc0123..
+    Old Password: o+u8*jy+UAWMrBHr6i6Awjl3T54vT2.l
+
+HOW TO CHANGE PASSWORD OF WAZUH
+
+cd /usr/share/wazuh-indexer/plugins/opensearch-security/tools/
+bash wazuh-passwords-tool.sh -u admin -p <desired Password>
+
+Restart system services
+
+sudo systemctl reload filebeat
+sudo systemctl reload wazuh-dashboard
+sudo systemctl reload wazuh-mananger
+
+then wait 15-20 seconds for the wazuh dashboard server to load
